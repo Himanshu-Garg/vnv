@@ -1,0 +1,8 @@
+.rev_slider_wrapper, .rev_slider, .tp-fullwidth-forcer, .rev_slider .tp-bgimg.defaultimg {
+    max-height: 400px !important;
+    background-position: center center !important;
+}
+
+#html5-watermark {
+    visibility: hidden;
+}

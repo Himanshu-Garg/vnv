@@ -43,12 +43,15 @@
     <!-- JS | jquery plugin collection for this theme -->
     <script src="js/jquery-plugin-collection.js"></script>
     <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    
+
+    <style>
+        #this_year_result {
+  
+          height: 400px;
+          width:100%
+        } 
+    </style>
     </head>
     <body class="boxed-layout pt-40 pb-40 pt-sm-0" data-bg-img="images/pattern/p11.png">
         <div id="wrapper" class="clearfix">
@@ -126,9 +129,31 @@
                             </div>
                         </div>
                     </div>
-                    <center>
-                    <img src="images/2019_result.jpg" style="height:400px;">
-                    </center>
+
+                    <picture id="this_year_result">
+                        <source media="(min-width: 900px)" srcset="images/2019_result.jpg">
+                        <source media="(min-width: 480px)" srcset="images/res2.jpg">
+                        <img src="images/res2.jpg" alt="IfItDoesntMatchAnyMedia">
+                    </picture>
+
+
+
+
+
+
+                    <div class="container ">
+                        <!-- Section Content -->
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <br>
+                                    <h1 class="title"> &nbsp;<span class="text-theme-colored2"> Previous </span> Years Results</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div id="main-wrapper">
                         <div id="main">
                             <div class="wrapper">

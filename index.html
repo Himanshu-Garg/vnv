@@ -71,7 +71,23 @@
         99%{    color:transparent;  }
         100%{   color: red;    }
         }
+
+        #recording_here {
+        	font-size: 20px;
+
+        }
     </style>
+
+
+
+    <style>
+    @media (max-width: 700px) {
+    	#recording_here {
+    		font-size: 18px;
+    	}
+
+    }
+	</style>
 </head>
 <body class="boxed-layout pb-40 pt-sm-0" data-bg-img="images/pattern/p11.png" style="margin-top: 40px">
 <div id="wrapper" class="clearfix">
@@ -135,7 +151,7 @@
 
 <a href="video_library.html"> 
 	<section style="background-color: #5D9CEC; width=100%; text-align: center;">
-		<span style="color: white; font-weight: bold;font-size: 20px"> Video Recording available for revision </span>
+		<span id="recording_here" style="color: white; font-weight: bold;"> Video Recording available for revision </span>
 		<span class="blinking" style="font-size: 20px"> (Click here) </span>
 	</section>
 </a>

@@ -1,29 +1,29 @@
-<section>
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                    <div>
-                        <h2>{{ heading }}</h2>
-                    </div>
-                    <!-- Portfolio Gallery Grid -->
-                    <div id="grid" class="gallery-isotope default-animation-effect grid-3 gutter clearfix">
-                        
-                        
-                        {% for item in data %} 
-                        <div class="gallery-item">
-                            <div class="thumb">
-                                <a href="{{ item.link }}" data-width="1000" data-height="600" class="html5lightbox"
-                                data-title="{{ item.title }}">
-                                <img src="{{ item.image }}"></a>
-                            </div>
-                        </div>
-                        {% endfor %}
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section>
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <div>
+                        <h2>{{ heading }}</h2>
+                    </div>
+                    <!-- Portfolio Gallery Grid -->
+                    <div id="grid" class="gallery-isotope default-animation-effect grid-3 gutter clearfix">
+                        
+                        
+                        {% for item in data %} 
+                        <div class="gallery-item">
+                            <div class="thumb">
+                                <a href="{{ item.link }}" data-width="1000" data-height="600" class="html5lightbox"
+                                data-title="{{ item.title }}">
+                                <img src="{{ item.image }}"></a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -59,6 +59,21 @@
     <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
     <style>
 
+        .admission_query {
+    
+            position: sticky;
+            float: right;
+            top: 30%;
+
+            max-width: 30%;
+            max-height: 160px;
+
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
         .blinking{
          animation:blinkingText 1.2s infinite;
          font-weight: bolder;
@@ -101,6 +116,11 @@
 
 
 </head>
+
+
+
+
+
 <body class="boxed-layout pb-40 pt-sm-0" style="margin-top: 20px">
 <div id="wrapper" class="clearfix">
 <!-- Header -->
@@ -166,17 +186,31 @@
     </div>
 </header>
 
-<a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank"> 
-        <section style="background-color: #416593; width=100%; text-align: center; margin: 20px 0px 0px 0px;">
-            <span id="recording_here" style="color: white; font-weight: bold;"> Video Recording available for revision 
-                <span style="color: #F0EC1A"> (Click here) </span>
-            </span>
+<!-- admission enquiry image starts -->
+<style type="text/css">
+    @media (max-width:1231px) {
+      img#optionalstuff {
+        display: none;
+      }
+    }
+</style>
 
-            <!--
-            <span class="blinking" style="font-size: 20px"> (Click here) </span>
-            -->
-        </section>
-    </a>
+<img id="optionalstuff" src="images/admission_enquiry.png" href="#admission_query"  data-toggle="modal" class="admission_query">
+
+<!-- admission enquiry image ends -->
+
+
+<a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank"> 
+    <section style="position: initial; background-color: #416593; width=100%; text-align: center; margin: 20px 0px 0px 0px;">
+        <span id="recording_here" style="color: white; font-weight: bold;"> Video Recording available for revision 
+            <span style="color: #F0EC1A"> (Click here) </span>
+        </span>
+
+        <!--
+        <span class="blinking" style="font-size: 20px"> (Click here) </span>
+        -->
+    </section>
+</a>
 
 <!-- Start main-content -->
 <div class="main-content">

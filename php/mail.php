@@ -34,7 +34,6 @@ $mail->FromName = "vnvclasses website";
 $mail->AddAddress("vinay.ahlawat@gmail.com");
 $mail->AddAddress("nidhigupta.iitk@gmail.com");
 $mail->AddAddress("vivek.ahlawat.87@gmail.com");
-$mail->AddAddress("himanshugrag@gmail.com");
 //$mail->AddReplyTo("mail@mail.com");
 
 $mail->IsHTML(true);

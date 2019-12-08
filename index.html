@@ -590,7 +590,7 @@
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="owl-carousel-2col" data-dots="false">
+                        <div class="owl-carousel-2col testimonials">
                             <div class="item">
                                 <div class="team-member">
                                     <!--   for zooming the image when hover
@@ -661,7 +661,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="owl-carousel-2col" data-dots="false">
+                        <div class="owl-carousel-2col testimonials">
                             <div class="item">
                                 <div class="team-member">
                                     <!--   for zooming the image when hover
@@ -1038,6 +1038,32 @@
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+
+<!-- for testimonials slider -->
+<script type="text/javascript">
+
+    $('.testimonials').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        }
+    })
+</script>
 
 </body>
 </html>

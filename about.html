@@ -71,6 +71,7 @@
         .admission_query {
     
             position: sticky;
+            position: -webkit-sticky;   /* for safari */
             float: right;
             top: 20%;
 
@@ -81,6 +82,13 @@
             -o-transition: all 0.4s;
             -moz-transition: all 0.4s;
             transition: all 0.4s;
+        }
+
+        /* for making admission query image relative in mozilla */
+        @-moz-document url-prefix() {
+            .admission_query {
+                position: relative;
+            }   
         }
     </style>
 

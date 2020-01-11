@@ -5,9 +5,13 @@ Boxed Skin
 /* Menu items */
 .menuzord-menu > li{
 	padding: 18px 0;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 .menuzord-menu > li > a{
-	padding: 8px 16px;
+	padding: 8px 20px;
+	font-weight: bolder;
+	color: #000F68;
 }
 
 /* Active/hover state (menu items) */

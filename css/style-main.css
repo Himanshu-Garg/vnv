@@ -7681,6 +7681,9 @@ blockquote p {
 */
 .footer a {
   color: #808080;
+  font-weight: bolder;
+  font-size: 110%;
+  align-content: center;
 }
 .footer a:focus,
 .footer a:hover,
@@ -7689,6 +7692,8 @@ blockquote p {
 }
 .footer .widget .widget-title {
   margin-top: 0px;
+  font-weight: 1000;
+  font-size: 150%;
 }
 .footer .widget.dark .quick-contact-form button {
   border-color: #333333;

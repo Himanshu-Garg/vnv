@@ -100,7 +100,13 @@
 <!-- Header -->
     <header id="header" class="header">
 
+
+    <img style="margin-left: auto;margin-right: auto; display: block; width: 80%" src="images/logo/logo.png">
+
     <div class="header-middle p-0 bg-lighter xs-text-center">
+        
+
+        <!--
         <div class="container pt-20 pb-20">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3">
@@ -134,25 +140,33 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
     <div class="header-nav">
         <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
-            <div class="container">
-                <nav id="menuzord" class="menuzord blue">
-                    <ul class="menuzord-menu">
+            <div class="container" >
+                <nav id="menuzord" class="menuzord red">
+                    <ul class="menuzord-menu" style="font-weight: 1000;">
                         <!-- Why VNV , courses offered,  video library, our results, admission tests, contact us -->
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">Why VNV</a></li>
                         <li class="active"><a href="courses.html">Courses Offered</a></li>
-                        <li><a href="video_library.html">Video Library</a></li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank">
+                                <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+                                YouTube Lectures
+                            </a>
+                        </li>
                         <li><a href="result.html">Results</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
-                        <!--<li><a class="ajaxload-popup" href="ajax-load/form-appointment.html">Contact Us</a></li>-->
+                        <li><a href="reviews.html">Google Reviews</a></li>
+                       
                     </ul>
-                    <div class="pull-right sm-pull-none mb-sm-15">
-                        <a class="btn btn-colored btn-flat btn-theme-colored2 mt-15 mt-sm-10 pt-10 pb-10"
-                           href="#admission_query"  data-toggle="modal">Admission Query</a>
-                    </div>
+                    
+                        <div class="pull-right sm-pull-none mb-sm-15">
+                            <a class="btn btn-colored btn-flat btn-theme-colored2 mt-10 mt-sm-10 pt-10 pb-10"
+                               href="#admission_query"  data-toggle="modal" style="font-weight: 1000;">Admission Enquiry</a>
+                        </div>
+                    
                 </nav>
             </div>
         </div>
@@ -169,7 +183,7 @@
     }
 </style>
 
-<img id="optionalstuff" src="images/admission_enquiry.png" href="#admission_query"  data-toggle="modal" class="admission_query">
+<!--img id="optionalstuff" src="images/admission_enquiry.png" href="#admission_query"  data-toggle="modal" class="admission_query" -->
 
 <!-- admission enquiry image ends -->
 
@@ -177,7 +191,7 @@
 <!-- Start main-content -->
 <div class="main-content">
 
-    <style>
+     <style>
 
 
         #courses ul {
@@ -206,8 +220,9 @@
         }
 
         .course {
-            padding-top: 20px;
             height: 100%;
+            padding-bottom: 20px;
+            border-radius: 12px;
         }
 
         .admission-open {
@@ -230,17 +245,43 @@
         }
 
     </style>
+
     <br>
 
+    <style type="text/css">
+        .course-heading {
+            font-weight: bolder;
+            font-size: 23px;
+            background-color: #00027C; /* Blue */
+            border: none;
+            color: white;
+            text-decoration: none;
+            display: block;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            margin-bottom: 10px;
+            padding: 20px 0px 20px 0px;
+
+            /* Prefix required. Even Firefox only supports the -webkit- prefix */
+            /* -webkit-text-stroke: 1px black;   */
+        }
+
+        .course-content {
+            display: inline-block;
+            padding: 0px 20px 0px 20px;
+            color: #12315A;
+        }
+
+    </style>
+
     <!--start course Section-->
-    <section id="courses" class="bg-lighter">
-        <div class="container" style="padding-top: 30px ; padding-bottom: 10px">
+    <section id="courses" style="background-color: #EEEEEE !important;">
+        <div class="container" style="padding-top: 20px ; padding-bottom: 10px">
             <div class="section-title text-center mt-0">
                 <div class="row ">
                     <div class="col-md-12 col-md-offset">
-                        <h2 class="mt-0 line-height-1"><span class="text-theme-colored2">IIT JEE Main, JEE Advanced (PCM), NEET Physics and Chemistry</span>
+                        <h2 class="mt-0 line-height-1"><span style="color: #12315A; font-weight: bolder;">Courses for IIT-JEE and NEET preparation</span>
                         </h2>
-                        <h3 style="font-size: 23px"> Courses Available <font color="red"></font></h3>
                     </div>
                 </div>
             </div>
@@ -248,10 +289,10 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
                         <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
+                            <div class="details" style="text-align: center;">
                                 <h3 class="mt-0 mb-0">
-                                    <span style="color: black">Class 10th Students </span><br>
-                                    <span class="text-theme-colored2">Foundation in Maths & Science for IIT-JEE
+                                    <span class="course-heading">Class 11th Students </span>
+                                    <span class="course-content">Regular classroom course for JEE and NEET preparation <br> (Integrated with CBSE)
                                 </span>
                                 </h3>
                             </div>
@@ -259,21 +300,21 @@
                     </div>
                     <div class="col-sm-12 col-md-4">
                         <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
+                            <div class="details" style="text-align: center;">
                                 <h3 class="mt-0 mb-0">
-                                    <span style="color: black">Class 11th Students </span><br>
-                                    <span class="text-theme-colored2">Regular classroom course for JEE and NEET preparation <br> (Integrated with CBSE)
+                                    <span class="course-heading">Class 12th Students </span>
+                                    <span class="course-content">Regular classroom course for JEE and NEET preparation <br> (Integrated with CBSE)
                                 </span>
                                 </h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                        <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
+                        <div class="course bg-white mb-sm-30" style="padding-bottom: 5px">
+                            <div class="details" style="text-align: center;">
                                 <h3 class="mt-0 mb-0">
-                                    <span style="color: black">Class 12th Students </span><br>
-                                    <span class="text-theme-colored2">Regular classroom course for JEE and NEET preparation <br> (Integrated with CBSE)
+                                    <span class="course-heading">Class 12th Students </span>
+                                    <span class="course-content">Quick Revision course of Class 11th syllabus
                                 </span>
                                 </h3>
                             </div>
@@ -283,52 +324,52 @@
                 <!-- -------------------------------------------------- -->
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
-                        <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
+                        <div class="course bg-white mb-sm-30" style="padding-bottom: 5px">
+                            <div class="details" style="text-align: center;">
                                 <h3 class="mt-0 mb-0">
-                                    <span style="color: black">Class 12th Students </span><br>
-                                    <span class="text-theme-colored2">Quick Revision course of Class 11th syllabus
+                                    <span class="course-heading">12th Pass Students </span>
+                                    <span class="course-content">Droppers Batch <br> (For IIT-JEE and NEET) <br> 
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
                                 </span>
                                 </h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                        <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
+                        <div class="course bg-white mb-sm-30" style="padding-bottom: 5px">
+                            <div class="details" style="text-align: center;">
                                 <h3 class="mt-0 mb-0">
-                                    <span style="color: black">12th Pass Students </span><br>
-                                    <span class="text-theme-colored2">Droppers Batch <br> (For IIT-JEE and NEET) <br> 
-                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                </span>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
-                                <h3 class="mt-0 mb-0">
-                                    <span style="color: black">Crash Course </span><br>
-                                    <span class="text-theme-colored2">IIT-JEE (Maths) <br> NEET (Phy & Chem) <br>
-                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <span class="course-heading">Crash Course </span>
+                                    <span class="course-content">For IIT-JEE Mains 2020 <br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
 
                                     </span>
                                 </h3>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="course bg-white mb-sm-30">
+                            <div class="details" style="text-align: center;">
+                                <h3 class="mt-0 mb-0">
+                                    <span class="course-heading">Class 10th Students </span>
+                                    <span class="course-content">Foundation in Maths & Science for IIT-JEE
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--  --------------------------------------------------------------------------- --> 
-                <hr>
+                <!--  --------------------------------------------------------------------------- -->  
                 <div class="row">
+                    <div class="col-sm-0 col-md-2"> </div>
                 
-                    <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-8">
                         <div class="course bg-white mb-sm-30">
-                            <div class="details p-20" style="text-align: center;">
+                            <div class="details" style="text-align: center;">
                                 <h3 class="mt-0 mb-0">
-                                    <span style="color: black">Private Tuitions</span><br>
-                                    <span class="text-theme-colored2">Module and Doubt Solving Classes<br>
+                                    <span class="course-heading">Private Tuitions</span>
+                                    <span class="course-content" style="margin-top: 5px;">one-on-one module and doubt solving classes<br>
                                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
                                     </span>
@@ -337,12 +378,15 @@
                         </div>
                     </div>
 
-                </div>
-                <hr>     
+                    <div class="col-sm-0 col-md-2"> </div>
+
+                </div>  
     </section>
 
     
 </div>
+
+<br>
 
 
 
@@ -352,10 +396,13 @@
 <div class="modal fade" id="admission_query">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form class="form-horizontal" action="php/mail.php" method="POST">
-                <div class="modal-header">
-                    <h4 style="text-align: center; font-weight: bolder;">Admission Query</h4>
+            <form class="form-horizontal" action="php/mail.php" method="POST" style="font-weight: 700; color: black">
+                <div style="background-color: #A29AF3; font-weight: bolder; color: black;" class="modal-header">
+                    <h4 style="text-align: center; font-size: 170%;">Admission Enquiry</h4>
+                    <center>+91-9971878579, +91-9810909570 &nbsp; | &nbsp; Sector 12, Dwarka, New Delhi</center>
+                   
                 </div>
+                
 
                 <div class="modal-body">
                     <div class="form-group">
@@ -376,11 +423,11 @@
                         <label for="select-student-class" class="col-lg-3 control-label">Course :</label>
                         <div class="col-lg-8">
                             <select name="course" class="form-control" id="select-student-class">
-                                <option value="11th (Regular classroom)">11th (Regular classroom)</option>
-                                <option value="12th (Regular classroom)">12th (Regular classroom)</option>
-                                <option value="12th (Crash course)">12th (Crash course)</option>
-                                <option value="12th pass (Droppers batch)">12th pass (Droppers batch)</option>
-                                <option value="10th (Foundation in Maths and Science)">10th (Foundation in Maths and Science)</option>
+                                <option value="11th (Regular classroom)">11th - IITJEE & NEET</option>
+                                <option value="12th (Regular classroom)">12th - IITJEE & NEET</option>
+                                <option value="12th (Crash course)">Crash Course for JEE Mains 2020</option>
+                                <option value="12th pass (Droppers batch)">12th Pass - Droppers batch JEE & NEET</option>
+                                <option value="10th (Foundation in Maths and Science)">10th - Foundation in Maths & Science</option>
                               </select>
                         </div>
                     </div>
@@ -412,6 +459,7 @@
 
 
 
+
 <!-- modal ends here -->
 
 
@@ -419,71 +467,84 @@
 
 <!-- Footer -->
 <footer id="footer" class="footer bg-black-111">
-    <div class="container pt-70 pb-40">
+    <div class="container pt-30 pb-0">
         <div class="row border-bottom-black">
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-4">
                 <div class="widget dark">
-                    <img class="mt-10 mb-20" alt="" style="margin-left: auto; display: block;margin-right: auto ;max-width: 80%" src="images/logo-wide-vnv.png">
+                    <img style="margin-left: auto; display: block;margin-right: auto ;max-width: 80%; padding-top: 27px;" class="mt-10 mb-20" alt="" src="images/logo-wide-vnv.png">
                     <p style="text-align: center;"> 
-                        <span style="color: white; font-weight:700; font-size: 18px">Coaching by IITians</span> <br>
-                        <span style="font-weight: bolder;font-size: 14px">IIT JEE, NEET, Foundation</span>
+                        <span style="color: white; font-weight:700; font-size: 28px">Coaching by IITians</span> <br>
+                        <span style="color: white; font-weight:700; font-size: 22px">IIT JEE, NEET,  Foundation</span>
                     </p>
 
                 </div>
                
             </div>
-            <div class="col-sm-6 col-md-3">
 
-                <div class="widget dark">
-                    <h5 class="widget-title line-bottom">Call Us Now</h5>
-                    <div class="text-gray">
-                        <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a href="tel:9971878579"> +91 9971878579</a> <br> 
-                        <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a href="tel:9810909570">+91 9810909570</a>
+            <div class="col-sm-6 col-md-8" style="margin-top: 20px;">
+                <div class="row">
+                    <center>
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="widget dark">
+                            <h5 class="widget-title">Call Us Now</h5>
+                            <div class="text-gray">
+                                <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a href="tel:9971878579"> +91 9971878579</a> <br> 
+                                <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a href="tel:9810909570">+91 9810909570</a> <br>
+                                <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a href="tel:8527025606">+91 8527025606</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="widget dark">
-                    <h5 class="widget-title line-bottom">Reach Us</h5>
-                    <ul class="list-inline mt-5">
-                        <li class="m-0 pl-10 pr-10"><i class="fa fa-map-marker text-theme-colored2 mr-5"></i> <a
-                                class="text-gray" target="_blank" href="https://goo.gl/maps/nZpancMFifWL6X827">Sector 12 Dwarka New Delhi</a></li>
-                        <li class="m-0 pl-10 pr-10"><i class="fa fa-envelope-o text-theme-colored2 mr-5"></i> <a
-                                class="text-gray" target="_blank" href="mailto: vinay.ahlawat@gmail.com">vinay.ahlawat@gmail.com</a></li>
-                        <li class="m-0 pl-10 pr-10"><i class="fa fa-globe text-theme-colored2 mr-5"></i> <a
-                                class="text-gray" href="index.html">www.vnvclasses.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="widget dark">
-                    <h5 class="widget-title line-bottom">Opening Hours</h5>
-                    <div class="opening-hours">
-                        <ul class="list-border">
-                            <li class="clearfix"><span> 7 Days a Week :  </span>
-                                <div class="value pull-right flip"> 11:00 am - 08.00 pm</div>
-                            </li>
-
-                        </ul>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="widget dark">
+                            <h5 class="widget-title">Reach Us</h5>
+                            <ul class="list-inline mt-5">
+                                <li class="m-0 pl-10 pr-10"><i class="fa fa-map-marker text-theme-colored2 mr-5"></i> 
+                                    <a class="text-gray" target="_blank" href="https://goo.gl/maps/nZpancMFifWL6X827">Sector 12 Dwarka New Delhi</a>
+                                </li> <br>
+                                <li class="m-0 pl-10 pr-10"><i class="fa fa-envelope-o text-theme-colored2 mr-5"></i> 
+                                    <a class="text-gray" target="_blank" href="mailto: vinay.ahlawat@gmail.com">vinay.ahlawat@gmail.com </a>
+                                </li> <br>
+                                <li class="m-0 pl-10 pr-10"><i class="fa fa-youtube text-theme-colored2 mr-5"></i> 
+                                    <a class="text-gray" target="_blank" href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists">
+                                    Channel - VNV Classes</a>
+                                </li>
+                                <!--
+                                    <li class="m-0 pl-10 pr-10"><i class="fa fa-globe text-theme-colored2 mr-5"></i> <a
+                                        class="text-gray" href="index.html">www.vnvclasses.com</a></li>
+                                -->
+                            </ul>
+                        </div>
                     </div>
+                    </center>
                 </div>
-
+                <div class="row"> 
+                    <center>
+                    <div class="col-sm-12 col-md-10">
+                        <div class="widget dark">
+                            <span class="widget-title"> Opening Hours : </span>
+                            <a> 11:00 am - 08.00 pm (7 Days a Week)</a>
+                        </div>
+                    </div>
+                    </center>
+                </div>
             </div>
+            
         </div>
     </div>
 
 </footer>
 
 <center>
-    <div class="footer-bottom">
-        <div class="container pt-10 pb-0">
-            <div class="row">
-                <div class="col-md-12 sm-text-center">
-                    <p class="font-13">Copyright &copy;2019 VNVClasses. All Rights Reserved</p>
-                </div>
+<div class="footer-bottom">
+    <div class="container pt-10 pb-0">
+        <div class="row">
+            <div class="col-md-12 sm-text-center">
+                <p class="font-13">Copyright &copy;2020 VNVClasses. All Rights Reserved</p>
             </div>
         </div>
     </div>
+</div>
 </center>
 
 

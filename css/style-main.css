@@ -7455,7 +7455,7 @@ blockquote p {
 }
 /* -------- Footer & Sidebar Widgets ---------- */
 .widget {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 .widget .widget-title {
   margin-top: 0;

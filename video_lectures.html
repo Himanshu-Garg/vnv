@@ -83,33 +83,7 @@
             }   
         }
 
-        .blinking{
-         animation:blinkingText 1.2s infinite;
-         font-weight: bolder;
-         ;
-        }
-        @keyframes blinkingText
-        {
-        50%{     color: transparent;    }
-        100%{    color:yellow;  }
-        }
-
-        #recording_here {
-        	font-size: 20px;
-
-        }
     </style>
-
-
-
-    <style>
-    @media (max-width: 700px) {
-    	#recording_here {
-    		font-size: 18px;
-    	}
-
-    }
-	</style>
 
 	<meta name="google-site-verification" content="uuZ9jAcKl_rQWGZQTkNo9hfmetGSK2Q6nE-ZB7Sksdk" />
 
@@ -136,155 +110,516 @@
     <header id="header" class="header">
 
 
-    	<img style="margin-left: auto;margin-right: auto; display: block; width: 100%; margin-bottom: 2px;" src="images/logo/top_logo.PNG">
+    <img style="margin-left: auto;margin-right: auto; display: block; width: 100%; margin-bottom: 2px;" src="images/logo/top_logo.PNG">
 
-    	
-	    <div class="header-nav">
-	        <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
-	            <div class="container" >
-	                <nav id="menuzord" class="menuzord red">
-	                    <ul class="menuzord-menu" style="font-weight: 1000;">
-	                        <!-- Why VNV , courses offered,  video library, our results, admission tests, contact us -->
-	                        <li><a href="index.html">Home</a></li>
-	                        <li><a href="about.html">Why VNV</a></li>
-	                        <li><a href="courses.html">Courses Offered</a></li>
-	                        <!-- <li class="active">
-	                        	<a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank">
-	                        		<i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
-	                        		YouTube Lectures
-	                        	</a>
-	                        </li> -->
-	                        <li class="active">
-	                        	<a href="video_lectures.html">
-	                        		<i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
-	                        		Video Lectures
-	                        	</a>
-	                        </li>
-	                        <li><a href="result.html">Results</a></li>
-	                        <li><a href="reviews.html">Google Reviews</a></li>
-	                       
-	                    </ul>
-	                    
-	                        <div class="pull-right sm-pull-none mb-sm-15">
-	                            <a class="btn btn-colored btn-flat btn-theme-colored2 mt-10 mt-sm-10 pt-10 pb-10"
-	                               href="#admission_query"  data-toggle="modal" style="font-weight: 1000;">Admission Enquiry</a>
-	                        </div>
-	                    
-	                </nav>
-	            </div>
-	        </div>
-	    </div>
+    <div class="header-nav">
+        <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+            <div class="container" >
+                <nav id="menuzord" class="menuzord red">
+                    <ul class="menuzord-menu" style="font-weight: 1000;">
+                        <!-- Why VNV , courses offered,  video library, our results, admission tests, contact us -->
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Why VNV</a></li>
+                        <li><a href="courses.html">Courses Offered</a></li>
+                        <li class="active">
+                            <a href="video_lectures.html">
+                                <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+                                Video Lectures
+                            </a>
+                        </li>
+                        <li><a href="result.html">Results</a></li>
+                        <li><a href="reviews.html">Google Reviews</a></li>
+                       
+                    </ul>
+                    
+                        <div class="pull-right sm-pull-none mb-sm-15">
+                            <a class="btn btn-colored btn-flat btn-theme-colored2 mt-10 mt-sm-10 pt-10 pb-10"
+                               href="#admission_query"  data-toggle="modal" style="font-weight: 1000;">Admission Enquiry</a>
+                        </div>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
 	</header>
 
+    <a> 
+        <section style="position: initial; background-color: #00027C; width=100%; text-align: center; margin: 20px 0px 0px 0px;">
+            <a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank" id="recording_here" style="color: white; font-weight: 1000; font-size: 200%; letter-spacing: 2px;"> 200+ 
+                <span style="color: #FAFF00">DEMO</span> 
+                videos available at 
+                 <i class="fa fa-youtube-play fa-lg" aria-hidden="true" style="color: #FF3D3D;"></i>
+                YouTube
+                <span style="font-size: 110%; color: #FAFF00"> (Click here)</span>
+            </a>
 
-	<a> 
-	    <section style="position: initial; background-color: #00027C; width=100%; text-align: center; margin: 20px 0px 0px 0px;">
-	        <a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank" id="recording_here" style="color: white; font-weight: 1000; font-size: 200%; letter-spacing: 2px;"> 200+ 
-	        	<span style="color: #FAFF00">DEMO</span> 
-	        	videos available at 
-	        	 <i class="fa fa-youtube-play fa-lg" aria-hidden="true" style="color: #FF3D3D;"></i>
-	        	YouTube
-	            <span style="font-size: 110%; color: #FAFF00"> (Click here)</span>
-	        </a>
+            <!--
+            <span class="blinking" style="font-size: 20px"> (Click here) </span>
+            -->
+        </section>
+    </a>
 
-	        <!--
-	        <span class="blinking" style="font-size: 20px"> (Click here) </span>
-	        -->
-	    </section>
-	</a>
+    <style type="text/css">
+        .course_for_sale {
+            border: 1px solid black; 
+            padding: 10px 0px 10px 0px;
+            background-image: linear-gradient(to bottom right, #FCFF28, #FF3333);
+            height: 180px;
+            font-weight: 1000;
+            color: black;
+            text-align: center;
+            display: block;
 
-    <!-- Section: home -->
-    <section id="home">
-        <div class="container-fluid p-0">
-            <style>
-                .tp-bullet {
-                    display: none !important;
-                }
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            
+            position: relative;
+        }
 
-                .success_rate {
-                	margin: auto ;
-                	margin-bottom: 10px;
-                	margin-top: 14px;
-                	padding: 0px 5px; 
-                	
-                	border: 2px solid black; 
-                	border-radius: 20px;
+        .course_heading{
+            font-size: 150%;
+            color: #00016D;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
 
-                	background: #E92424;
-                	font-weight: 1000;
-                	color: yellow;
-                	font-size: 260%;
-                	
-                }
+        }
 
-            	.heading {
-		    		font-size: 23px;
-		    		font-weight: bolder;
-		    		text-align: center;
-		    		margin-top: 20px;
-		    	}
+        .course_name_1_liner {
+            font-size: 170%;
+            line-height: 120%;
+            margin-top: 60px;
+        }
 
-            </style>
+        .course_name_2_liner {
+            font-size: 170%;
+            line-height: 120%;
+            margin-top: 50px;
+        }
 
-        </div>
-    </section>
-	
+        .course_footer {
+            font-size: 150%;
+            color: #00016D;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .course_box {
+            margin: 20px 10px 0px 10px;
+        }
+
+        .course_buy {
+            color: red;
+            text-align: center;
+            font-weight: 1000;
+            border: 1px solid black;
+            font-size: 120%;
+
+            border-bottom-right-radius: 12px;
+
+        }
+
+        .course_topic {
+            color: black;
+            text-align: center;
+            font-weight: 1000;
+            border: 1px solid black;
+            font-size: 120%;
+
+            border-bottom-left-radius: 12px;
+        }
+
+        .course_topic a {
+            color: black;
+        }
+
+        .course_buy a{
+             color: red;
+        }
+
+        @media (max-width: 700px) {
+            .course_topic {
+                border-bottom-left-radius: 0px;
+            }
+
+            .course_buy {
+                border-bottom-left-radius: 12px;
+            }
+
+        }
+
+
+    </style>
+
+    <style type="text/css">
+        .tp-bullet {
+            display: none !important;
+        }
+
+        .success_rate {
+            margin: auto ;
+            margin-bottom: 10px;
+            margin-top: 14px;
+            padding: 0px 5px; 
+            
+            border: 2px solid black; 
+            border-radius: 20px;
+
+            background: #E92424;
+            font-weight: 1000;
+            color: yellow;
+            font-size: 260%;
+            
+        }
+
+        .heading {
+            font-size: 23px;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+
 	<!-- Start main-content -->
 	<div class="main-content">
 
+        <div class="heading">
+            <span class="mt-0 line-height-1" style="color: #FF0B0B; font-weight: 1000;font-size: 120%;letter-spacing: 1px; text-decoration: underline;"> Buy Chapter-wise Video Lectures</span>
+        </div>
+    
+    <section>
+        <div class="container" style="padding-top: 0px; padding-bottom: 0px;">
+            <div >
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.1 </span> Vectors & Forces</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-		
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_2_liner"> <span style="color: #00016D;">Ch.2 </span> Kinematics <br> (1 dimension)</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	    <section>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_2_liner"> <span style="color: #00016D;">Ch.3 </span> Projectile & <br>Circular Motion</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	        <div class="heading">
-	        	<span class="mt-0 line-height-1" style="color: #FF0B0B; font-weight: 1000;font-size: 120%;letter-spacing: 1px; text-decoration: underline;"> Buy Chapter-wise Video Lectures</span>
-	        </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.4 </span> Newton Laws</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	        <div style="font-weight: bold; color: black; font-size: 120%;">
-	        	
-	        	<div style="font-weight: 1000; font-size: 120%;"> 1. Steps for Laptop Users </div>
-	        	<ol style="margin-left: 20px;">
-	        		<li>
-	        			a) Go to 
-	        			<a href="https://web.classplusapp.com" target="_blank" style="color: blue; text-decoration: underline;">https://web.classplusapp.com </a> 
-	        		</li>
-	        		<li>b) Enter organization code as : vnv ; and click enter to verify. </li>
-	        		<li>c) Go to store to view chapters available for purchase.</li>
-	        		<li>d) The table of contents of chapter videos and related notes can be viewed before the purchase.</li>
-	        		<li>e) Click "Purchase Now" to get access to the lectures and notes of that chapter.</li>
-	        		<li>f) After successful payment, the purchased videos can be viewed on PC or mobile 
-	        		on "vnv classes" app (available at play store).</li>
-	        	</ol>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.6 </span> Rotational Motion</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	        	<br>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.7 </span> Gravitation</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	        	<div style="font-weight: 1000; font-size: 120%;"> 2. Steps for Android Users </div>
-	        	<ol style="margin-left: 20px;">
-	        		<li>
-	        			a) Install 
-	        			<a href="https://play.google.com/store/apps/details?id=co.jarvis.vnv&hl=en" target="_blank" style="color: blue; text-decoration: underline;">"vnv classes" app </a> 
-	        			from play store.
-	        		</li>
-	        		<li>b) Enter your mobile number and the generated OTP.  </li>
-	        		<li>c) Go to store to view chapters available for purchase.</li>
-	        		<li>d) The table of contents of chapter videos and related notes can be viewed before the purchase.</li>
-	        		<li>e) Click "Buy Now" and make payment.</li>
-	        		<li>f) After successful payment, the purchased videos can be viewed through vnv classes app or through the 
-	        			<a href="https://web.classplusapp.com" target="_blank" style="color: blue; text-decoration: underline;">link </a>.
-	        		</li>
-	        	</ol>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.8 </span> Liquids</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	        </div>
-	        
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.9 </span>Properties of Matter</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_2_liner"> <span style="color: #00016D;">Ch.10 </span>KTG and <br> Thermodynamics</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-	    </section>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_2_liner"> <span style="color: #00016D;">Ch.11 </span>Simple Harmonic <br> Motion</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-   		<br>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="course_box">
+                            <div class=row>
+                                <div class="course_for_sale">
+                                    <div class="course_heading"> IIT-JEE & NEET </div>
+                                    <div class="course_name_1_liner"> <span style="color: #00016D;">Ch.12 </span>Waves</div>
+                                    <div class="course_footer">Class 11th - Physics</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 course_topic"><a href="#popup_ch1" data-toggle="modal" >TOPICS </a></div>
+                                <div class="col-sm-6 course_buy">BUY</div>
+                            </div>
+                        </div>
+                    </div>
 
-     </div>
+                </div>
+                <br>            
+            </div>
+        </div>
+    </section>
+    </div>
 </div>
+
+<div class="main-content">
+    <section>
+        <hr>
+
+        <div style="font-weight: bold; color: black; font-size: 120%;">
+            
+            <div style="font-weight: 1000; font-size: 120%;"> 1. Steps for Laptop Users </div>
+            <ol style="margin-left: 20px;">
+                <li>
+                    a) Go to 
+                    <a href="https://web.classplusapp.com" target="_blank" style="color: blue; text-decoration: underline;">https://web.classplusapp.com </a> 
+                </li>
+                <li>b) Enter organization code as : vnv ; and click enter to verify. </li>
+                <li>c) Go to store to view chapters available for purchase.</li>
+                <li>d) The table of contents of chapter videos and related notes can be viewed before the purchase.</li>
+                <li>e) Click "Purchase Now" to get access to the lectures and notes of that chapter.</li>
+                <li>f) After successful payment, the purchased videos can be viewed on PC or mobile 
+                on "vnv classes" app (available at play store).</li>
+            </ol>
+
+            <br>
+
+            <div style="font-weight: 1000; font-size: 120%;"> 2. Steps for Android Users </div>
+            <ol style="margin-left: 20px;">
+                <li>
+                    a) Install 
+                    <a href="https://play.google.com/store/apps/details?id=co.jarvis.vnv&hl=en" target="_blank" style="color: blue; text-decoration: underline;">"vnv classes" app </a> 
+                    from play store.
+                </li>
+                <li>b) Enter your mobile number and the generated OTP.  </li>
+                <li>c) Go to store to view chapters available for purchase.</li>
+                <li>d) The table of contents of chapter videos and related notes can be viewed before the purchase.</li>
+                <li>e) Click "Buy Now" and make payment.</li>
+                <li>f) After successful payment, the purchased videos can be viewed through vnv classes app or through the 
+                    <a href="https://web.classplusapp.com" target="_blank" style="color: blue; text-decoration: underline;">link </a>.
+                </li>
+            </ol>
+        </div>
+    </section>
+    <br>
+ </div>
+
+
+
+
+
+<!-- popups for courses_for_sale -->
+
+<style>
+
+    .course_popup {
+
+        position: sticky;
+        position: -webkit-sticky;   /* for safari */
+        float: right;
+        top: 20%;
+
+
+        max-width: 50%;
+        max-height: 290px;
+
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    /* for making admission query image relative in mozilla */
+    @-moz-document url-prefix() {
+        .admission_query {
+            position: relative;
+        }   
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-weight: 1000;
+    }
+
+    td, th {
+        border : 0px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+
+
+<div class="modal fade" class="course_popup"  id="popup_ch1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header" style="background-color: #A29AF3; font-weight: bolder; color: black; font-size: 100%; padding: 5px;" >
+                <h4 style="text-align: center; font-size: 200%;">Vectors & Forces</h4>              
+            </div>
+
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td>1.1 Triangle & Parallelogram Law of Vector Addition</td>
+                        <td>3.3 Rain Wind, Rain Man, Aircraft Wind Problems</td>
+                    </tr>
+                    <tr>
+                        <td>1.2 Triangle & Parallelogram Law of Vector Addition</td>
+                        <td>3.4 Minimum Separation between Two Moving Bodies</td>
+                    </tr>
+                    <tr>
+                        <td>2.1 Addition of Vectors Using Component Method</td>
+                        <td>4.1 Dot Product</td>
+                    </tr>
+                    <tr>
+                        <td>2.2 Forces, Equilibrium, Common Forces</td>
+                        <td>4.2 Cross Product</td>
+                    </tr>
+                    <tr>
+                        <td>2.3 Frictional Force</td>
+                        <td>4.3 Torque Introduction</td>
+                    </tr>
+                    <tr>
+                        <td>3.1 Subtraction of Vectors, Relative Velocity Introduction</td>
+                        <td>5.1 Practice, Doubts</td>
+                    </tr>
+                    <tr>
+                        <td>3.2 Swimmer River Problem</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal"> Close </a>
+            </div>
+        </div>
+    </div>
+</div>
+        
 
 
 <!-- modal (admission query) -->
@@ -348,6 +683,11 @@
         </div>
     </div>
 </div>
+
+
+
+
+
 
 
 <!-- modal ends here -->
@@ -462,11 +802,12 @@
 <!-- for testimonials slider -->
 <script type="text/javascript">
 
-    $('.testimonials').owlCarousel({
-        loop:true,
+    $('.courses').owlCarousel({
+        loop:false,
         margin:10,
+        mouseDrag: false,
         nav:false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         dots:false,
@@ -478,7 +819,7 @@
                 items:1
             },
             1000:{
-                items:2
+                items:1
             }
         }
     })

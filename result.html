@@ -9,7 +9,7 @@
     <meta name="keywords" content="academy, course, education, education html theme, elearning, learning,"/>
     <meta name="author" content="dhruvramdev.tech"/>
     <!-- Page Title -->
-    <title>VNVClasses | JEE Mains Result 2019 | NEET Result 2019</title>
+    <title>VNV Classes | Live and Interactive Online Lectures for IIT JEE and NEET.</title>
     <!-- Favicon and Touch Icons -->
     <link href="images/favicon.png" rel="shortcut icon" type="image/png">
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -140,7 +140,7 @@
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">Why VNV</a></li>
                                         <li><a href="courses.html">Courses Offered</a></li>
-                                        <li ><a href="online_lectures.html">Online Classes**</a></li>
+                                        <li ><a href="online_lectures.html">Online Classes<span class="blinking">**</span></a></li>
                                         <li>
                                             <a href="video_lectures.html">
                                                 <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
@@ -169,6 +169,17 @@
                       img#optionalstuff {
                         display: none;
                       }
+                    }
+
+                    .blinking{
+                        animation:blinkingText 0.8s infinite;
+                    }
+                    @keyframes blinkingText{
+                        0%{     color: #000;    }
+                        49%{    color: red; }
+                        50%{    color: blue;    }
+                        99%{    color: green;   }
+                        100%{   color: #000;    }
                     }
                 </style>
 

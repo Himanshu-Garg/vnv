@@ -151,7 +151,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">Why VNV</a></li>
                         <li class="active"><a href="courses.html">Courses Offered</a></li>
-                        <li ><a href="online_lectures.html">Online Classes**</a></li>
+                        <li ><a href="online_lectures.html">Online Classes<span class="blinking">**</span></a></li>
                         <li>
                             <a href="video_lectures.html">
                                 <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
@@ -182,6 +182,17 @@
         display: none;
       }
     }
+
+    .blinking{
+            animation:blinkingText 0.8s infinite;
+        }
+        @keyframes blinkingText{
+            0%{     color: #000;    }
+            49%{    color: red; }
+            50%{    color: blue;    }
+            99%{    color: green;   }
+            100%{   color: #000;    }
+        }
 </style>
 
 <!--img id="optionalstuff" src="images/admission_enquiry.png" href="#admission_query"  data-toggle="modal" class="admission_query" -->
@@ -305,11 +316,11 @@
                                 <h3 class="mt-0 mb-0">
                                     <span class="course-heading">
                                         <img style="width: 40px;" src="images/new_gifs/new_blink.gif">
-                                        Live Online Classes For Above IIT JEE and NEET Courses
+                                        Live Online Classes For Below IIT JEE and NEET Courses
                                         <img style="width: 40px;" src="images/new_gifs/new_blink.gif">
                                         <img style="width: 40px;" src="images/new_gifs/new_blink.gif">
                                     </span>
-                                    <span class="course-content" style="margin-top: 5px;">Interactive Classes | Recorded Video Lectures | Doubt Solving Sessions | <br>Daily Assignments | Online Practice Tests
+                                    <span class="course-content" style="margin-top: 5px;">Interactive Classes | Recorded Video Lectures | Doubt Solving Sessions | Daily Assignments | Online Practice Tests
                                     </span>
                                 </h3>
                             </div>

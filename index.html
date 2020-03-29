@@ -11,7 +11,7 @@
     <meta name="author" content="dhruvramdev.tech"/>
 
     <!-- Page Title -->
-    <title>VNV Classes | Best Institute for IIT JEE Main, JEE Advanced & NEET in Dwarka.</title>
+    <title>VNV Classes | Live and Interactive Online Lectures for IIT JEE and NEET.</title>
 
     <!-- Favicon and Touch Icons -->
     <link href="images/favicon.png" rel="shortcut icon" type="image/png">
@@ -103,12 +103,23 @@
 
 
     <style>
-    @media (max-width: 700px) {
-    	#recording_here {
-    		font-size: 18px;
-    	}
+	    @media (max-width: 700px) {
+	    	#recording_here {
+	    		font-size: 18px;
+	    	}
 
-    }
+	    }
+
+	    .blinking{
+			animation:blinkingText 0.8s infinite;
+		}
+		@keyframes blinkingText{
+			0%{		color: #000;	}
+			49%{	color: red;	}
+			50%{	color: blue;	}
+			99%{	color: green;	}
+			100%{	color: #000;	}
+		}
 	</style>
 
 	<meta name="google-site-verification" content="uuZ9jAcKl_rQWGZQTkNo9hfmetGSK2Q6nE-ZB7Sksdk" />
@@ -176,6 +187,7 @@
             </div>
         </div>
     	-->
+
     </div>
     <div class="header-nav">
         <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
@@ -186,7 +198,11 @@
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">Why VNV</a></li>
                         <li><a href="courses.html">Courses Offered</a></li>
-                        <li ><a href="online_lectures.html">Online Classes**</a></li>
+                        <li >
+                        	<a href="online_lectures.html">
+                        		Online Classes<span class="blinking">**</span>
+	                        </a>
+                        </li>
                         <li>
                             <a href="video_lectures.html">
                                 <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
@@ -453,7 +469,7 @@
         	display: inline-block;
 			padding: 0px 20px 0px 20px;
 			color: #12315A;	
-			font-size: 20px;
+			font-size: 18px;
 
         }
 
@@ -480,11 +496,11 @@
                                 <h3 class="mt-0 mb-0">
                                     <span class="course-heading">
                                     	<img style="width: 40px;" src="images/new_gifs/new_blink.gif">
-                                    	Live Online Classes For Above IIT JEE and NEET Courses
+                                    	Live Online Classes For Below IIT JEE and NEET Courses
                                     	<img style="width: 40px;" src="images/new_gifs/new_blink.gif">
                                     	<img style="width: 40px;" src="images/new_gifs/new_blink.gif">
                                     </span>
-                                    <span class="course-content" style="margin-top: 5px;">Interactive Classes | Recorded Video Lectures | Doubt Solving Sessions | <br>Daily Assignments | Online Practice Tests
+                                    <span class="course-content" style="margin-top: 5px;">Interactive Classes | Recorded Video Lectures | Doubt Solving Sessions | Daily Assignments | Online Practice Tests
                                     </span>
                                 </h3>
                             </div>

@@ -130,7 +130,7 @@
 	                        <li><a href="index.html">Home</a></li>
 	                        <li><a href="about.html">Why VNV</a></li>
 	                        <li><a href="courses.html">Courses Offered</a></li>
-                            <li class="active"><a href="online_lectures.html">Online Classes**</a></li>
+                            <li class="active"><a href="online_lectures.html">Online Classes<span class="blinking">**</span></a></li>
 	                        <!-- <li class="active">
 	                        	<a href="https://www.youtube.com/channel/UCtXWvl14qTp22AzLFYRi0HQ/playlists" target="_blank">
 	                        		<i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
@@ -171,6 +171,17 @@
     		margin-top: 20px;
     	}
 
+        .blinking{
+            animation:blinkingText 0.8s infinite;
+        }
+        @keyframes blinkingText{
+            0%{     color: #000;    }
+            49%{    color: red; }
+            50%{    color: blue;    }
+            99%{    color: green;   }
+            100%{   color: #000;    }
+        }
+
     </style>
 
 
@@ -200,11 +211,10 @@
 	<div class="main-content">
 
 	    <section>
-            <br>
 
-	        <div style="font-weight: bold; color: black; font-size: 120%; margin-left: 20px; margin-right: 10px; ">
+	        <div style="font-weight: bold; color: black; font-size: 120%;margin-left: 20px; margin-right: 10px; ">
 	        	
-	        	<div style="font-weight: 1000; font-size: 140%;"> Benefits of our Live and Interactive Online IIT JEE and NEET Courses </div>
+	        	<div style="font-weight: 1000; font-size: 132%; margin-top: 8px;"> Benefits of our Live and Interactive Online IIT JEE and NEET Courses </div>
 	        	<ol style="margin-left: 0px; list-style: square; font-size: 105%; font-family: Arial;" >
 	        		<li>Live sessions with 2 way interaction between students and tutor.</li>
 	        		<li>Students are at ease to ask doubts in online classes in comparison to regular classrooms as it simulates private coaching.</li>
@@ -215,9 +225,9 @@
 	        		<li>Recording of our online video lectures are available to our students. Unlimited access to these recorded videos helps students revise lectures better.</li>
 	        	</ol>
 
-	        	<br>
+	        	
 
-	        	<div style="font-weight: 1000; font-size: 140%;"> Our Live Online IIT JEE and NEET Courses vs Online Courses of Other Coaching Institutes </div>
+	        	<div style="font-weight: 1000; font-size: 132%; margin-top: 8px;"> Our Live Online IIT JEE and NEET Courses vs Online Courses of Other Coaching Institutes </div>
 	        	<ol style="margin-left: 0px; list-style: square; font-size: 105%; font-family: Arial;">
 	        		<li>Our online IIT JEE and NEET classes are scheduled every day of the week. A sincere student should be able to make best use of this unexpected free time made available to him. </li>
                     <li>Our tutors are IITians with many years teaching experience, both online and offline. In many IIT JEE and NEET institutes the faculty teaching online students is not as good / qualified as the faculty taking regular classes. </li>

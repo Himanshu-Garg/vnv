@@ -11,7 +11,7 @@
     <meta name="author" content="dhruvramdev.tech"/>
 
     <!-- Page Title -->
-    <title>VNV Classes | Live and Interactive Online Lectures for IIT JEE and NEET.</title>
+    <title>VNV Classes | Best Institute for IIT JEE Main, JEE Advanced & NEET in Dwarka.</title>
 
     <!-- Favicon and Touch Icons -->
     <link href="images/favicon.png" rel="shortcut icon" type="image/png">
@@ -121,7 +121,7 @@
                         <li ><a href="index.html">Home</a></li>
                         <li><a href="about.html">Why VNV</a></li>
                         <li><a href="courses.html">Courses Offered</a></li>
-                        <li ><a href="online_lectures.html">Online Classes**</a></li>
+                        <li ><a href="online_lectures.html">Online Classes<span class="blinking">**</span></a></li>
                         <li class="active">
                             <a href="video_lectures.html">
                                 <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
@@ -258,6 +258,18 @@
     </style>
 
     <style type="text/css">
+
+        .blinking{
+            animation:blinkingText 0.8s infinite;
+        }
+        @keyframes blinkingText{
+            0%{     color: #000;    }
+            49%{    color: red; }
+            50%{    color: blue;    }
+            99%{    color: green;   }
+            100%{   color: #000;    }
+        }
+        
         .tp-bullet {
             display: none !important;
         }
